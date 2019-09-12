@@ -11,6 +11,6 @@ export class SearchService {
 
   searchFlight(search) {
     let headers = new HttpHeaders({ 'Content-Type': 'application/json' })
-    return this.http.post('http://www.ije-api.tcore.xyz/v1/flight/search-flight',JSON.stringify(search), { headers: headers })
+    return this.http.post('https://www.ije-api.tcore.xyz/v1/flight/search-flight',JSON.stringify(search), { headers: headers })
   }
 }
